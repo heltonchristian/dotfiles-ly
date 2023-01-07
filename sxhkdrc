@@ -3,7 +3,7 @@
 super + Return
 	kitty
 
-# google-chrome
+# brave browser
 super + F9
 	brave
 
