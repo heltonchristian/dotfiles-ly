@@ -31,9 +31,9 @@ alias ls='ls --color=auto'
 alias rm='rm -r'
 
 #Customres
-alias 1440p='nvidia-settings -a CurrentMetaMode="DVI-I-1: 1920X1080_144 {ViewPortIn=1440x1080_144, ViewPortOut=1920x1080, Paining=1440x1080}"'
+alias 1440p='nvidia-settings -a CurrentMetaMode="DVI-I-1: 1920X1080_144 {ViewPortIn=1440x1080_144, ViewPortOut=1920x1080, Paining=1440x1080}";bspc wm -r'
 
-alias 1920p='nvidia-settings -a CurrentMetaMode="DVI-I-1: 1920X1080_144 {ViewPortIn=1920x1080_144, ViewPortOut=1920x1080, Paining=1920x1080}"'
+alias 1920p='nvidia-settings -a CurrentMetaMode="DVI-I-1: 1920X1080_144 {ViewPortIn=1920x1080_144, ViewPortOut=1920x1080, Paining=1920x1080}";bspc wm -r'
 
 
 
