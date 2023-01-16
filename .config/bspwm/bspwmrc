@@ -1,31 +1,30 @@
 #! /bin/sh
 
-xrandr --output DVI-I-1 --mode 1920x1080 --rotate normal --rate 144 
-#--primary --output VGA-1-1 --mode 1360x760 --rotate normal --rate 60 --right-of DVI-I-1
+xrandr --output DVI-I-1 --mode 1920x1080 --rotate normal --rate 144 --primary --output VGA-1-1 --mode 1360x768 --rotate normal --rate 60 --right-of DVI-I-1
 
 sxhkd &
 
-#Wallpaper
+##Wallpaper
 ${HOME}/.fehbg &
 
 
-#Picom
+##Picom
 picom &
 
 
-#Polybar
+##Polybar
 ~/.config/polybar/launch.sh &
 
-bspc monitor DVI-I-1 -d I II III IV V
-#bspc monitor VGA-1-1 -d VI VII VIII IX X
+bspc monitor DVI-I-1 -d I II III
+bspc monitor VGA-1-1 -d IV V VI
 
-bspc config border_width         1
-bspc config window_gap          12
+bspc config border_width         4
+bspc config window_gap          20
 
-bspc config split_ratio          0.52
+bspc config split_ratio          1.00
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a spotify desktop='IV'
-bspc rule -a Steam desktop='V'
-bspc rule -a teams desktop='III' 
+bspc rule -a steam  desktop='4'  state=floating  center=true
+bspc rule -a brave private=on
+ 
