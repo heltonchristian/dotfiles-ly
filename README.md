@@ -7,4 +7,4 @@
 sudo pacman -S git vim kitty zsh neofetch tint2 nemo nvidia-settings steam dmenu gamemode picom nitrogen 
 
 .
-yay -S spotify brave-bin yaru-colors-gtk-theme nerd-fonts-complete
+yay -S spotify brave-bin yaru-colors-gtk-theme nerd-fonts-complete cpupower-fui
