@@ -3,13 +3,13 @@
 super + Return
 	kitty
 
-# google-chrome
+# browser
 super + F9
 	brave
 
-# nautilus
+# file manager
 super + F10
-	nautilus
+	nnemo
 
 # spotify
 super + F11
