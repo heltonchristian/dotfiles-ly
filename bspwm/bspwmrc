@@ -1,0 +1,30 @@
+#! /bin/sh
+
+xrandr --output DVI-I-1 --mode 1920x1080 --rotate normal --rate 144 --primary 
+
+sxhkd &
+
+##Wallpaper
+${HOME}/.fehbg &
+
+
+##Picom
+picom &
+
+##screen
+bspc monitor DVI-I-1 -d 1 2 3 4 5
+
+bspc config border_width         4
+bspc config window_gap          20
+
+bspc config split_ratio          1.00
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc config focus_follows_pointer true
+
+
+bspc rule -a Steam desktop='^5' focus=on follow=on
+bspc rule -a Spotify desktop='^5' focus=on follow=on
+ 
+
